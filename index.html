@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>WEBAGENCY</title>
+</head>
+
+<body>
+
+    <div id="containerPage">
+    <!--création d'un container fixe pour le menu visible sur toute la page-->
+    <div id="containerFixedHeader">
+        <!--création du menu avec logo et liens sur la page-->
+        <header id="logoMenu">
+
+            <div id="logoEntreprise">
+
+                <img src="logo.png" alt="logo de l'entreprise WebAgency">
+
+            </div>
+                
+            <nav>
+
+                <a href="#sectionEntete">Accueil</a>
+                <a href="#sectionServices">Services</a>
+                <a href="#sectionProjets">Portfolio</a>
+                <a href="#sectionContact">Contact</a>
+
+            </nav>
+
+        </header>
+
+    </div>
+
+    <section id="sectionEntete">
+        <!--création du slider-->
+        <div id="slider">
+            <!--image du slider en position relative-->
+            <div id="imageSlider">
+                <img src="bg1.jpg" alt="petite fille souriante les mains recouvertes de peinture">
+            </div>
+            <!--texte du slider en position absolute-->
+            <div id="contenuSlider">
+
+                <div id="leftChevron">
+                    <i class="fas fa-chevron-left "></i>
+                </div>
+                
+                <div id="texteSlider">
+                    <h1><span>WEBAGENCY</span> : L'AGENCE DE TOUS VOS PROJETS&nbsp;!</h1>
+                    <p>Vous avez un projet web ? La WebAgency vous aide à le réaliser&nbsp;!</p>
+                    <button>Plus d'infos</button>
+                </div>
+
+                <div id="rightChevron">
+                    <i class="fas fa-chevron-right"></i>
+                </div>
+            
+                
+            </div>
+
+        </div>
+                
+    </section>
+
+    <section id="sectionServices">
+        <!--entête de la section service-->
+        <header id="headerServices">
+
+            <h1>NOS SERVICES</h1>
+            <!--trait de séparation-->
+            <div class="separation">
+
+            <hr>
+                                                
+            <i class="fas fa-circle"></i>
+                        
+            <hr>
+            <!--fin du trait de séparation-->    
+            </div>
+
+            <p>La WebAgengy est composée d'une vaste équipe de professionnels du web à votre service pour la réalisation de vos projets.</p>
+
+        </header>
+            
+            <div id="contenuServices">
+
+                <div id="photoOrdi">
+
+                    <img src="main-feature.png" alt="photo d'un écran d'ordinateur">
+
+                </div>
+
+                <div id="texteServices">
+                    <!--articles représentant les différents services-->
+                    <article class="blocArticle">
+                        <!--logo devant le descriptif du service-->
+                        <div class="logoArticle">
+
+                            <i class="fas fa-chart-line logoStyle"></i>
+                                
+                            <i class="fas fa-circle logoStyleCircle" ></i>
+                               
+                        </div>
+                        <!--fin du logo-->
+                        <div class="texteArticle">
+
+                            <div class="h3Article">
+                                <h3>UX design</h3>
+                            </div>
+
+                            <div class="pArticle">
+                                <p>Prendre en compte et anticiper les attentes et les besoins de l'utilisateur de votre site web.</p>
+                            </div>
+                                        
+                        </div>
+
+                    </article>
+
+                    <article class="blocArticle">
+                        <!--logo devant le descriptif du service-->
+                        <div class="logoArticle">
+
+                            <i class="fas fa-cubes logoStyle "></i>
+                                        
+                            <i class="fas fa-circle logoStyleCircle" ></i>
+                                       
+                        </div>
+                        <!--fin du logo-->
+                        <div class="texteArticle">
+
+                            <div class="h3Article">
+                                <h3>UI design</h3>
+                            </div>
+
+                            <div class="pArticle">
+                                <p>Créer un site agréable et pratique; facile à prendre en main afin que l'utilisateur vive la meilleure expérience possible.</p>
+                            </div>
+                                        
+                        </div>
+
+                    </article>
+
+                    <article class="blocArticle">
+                        <!--logo devant le descriptif du service-->
+                        <div class="logoArticle">
+
+                            <i class="fas fa-chart-pie logoStyle "></i>
+                                                
+                            <i class="fas fa-circle logoStyleCircle" ></i>
+                                               
+                        </div>
+                        <!--fin du logo-->
+                        <div class="texteArticle">
+
+                            <div class="h3Article">
+                                <h3>SEO</h3>
+                            </div>
+
+                            <div class="pArticle">
+                                <p>Optimiser vos projets web afin qu'il bénéficie du meilleur référencement possible.</p>
+                            </div>
+                                        
+                        </div>
+
+                    </article>
+                    
+                </div>
+
+            </div>
+
+    </section>
+        
+    <section id="sectionProjets">
+
+        <h1>NOS PROJETS</h1>
+        <!--Trait de séparation-->
+        <div class="separation">
+
+            <hr>
+                                        
+            <i class="fas fa-circle"></i>
+                
+            <hr>
+                
+        </div>
+        <!--fin du trait de séparation-->
+        <p id="pHeaderProjets">Laissez vous embarquer dans les différents projets réalisés par nos soins.</p>
+            <!--menu de la section projets-->        
+            <div id="menuProjets">
+                    
+                <a href="#menuProjets" id="AllWorks">All&nbsp;Works</a>
+                <a href="#menuProjets">Creative</a>
+                <a href="#menuProjets">Corporate</a>
+                <a href="#menuProjets" id="Portfolio">Portfolio</a>
+
+            </div>
+            
+        <div id="miseenpagePortfolio">
+
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="01.jpg" alt="dessin de lunette et d'un faux nez">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Optic 10000</h3>
+                            <p>Boutique d'opticien en ligne</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="01.jpg" alt="dessin de lunette et d'un faux nez">
+                </figure>
+
+            </div>
+
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="02.jpg" alt="dessin d'un homme déguisé en lapin">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Déguiz' 10000</h3>
+                            <p>Boutique de déguisements</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="02.jpg" alt="dessin d'un homme déguisé en lapin">
+                </figure>
+
+            </div>
+
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="03.jpg" alt="dessin du logo pompadour">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Pompadour</h3>
+                            <p>Boutique de luxe</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="03.jpg" alt="dessin du logo pompadour">
+                </figure>
+
+            </div>
+
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="04.jpg" alt="dessin d'un carton à plier">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Carton 10000</h3>
+                            <p>Meubles en carton</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="04.jpg" alt="dessin d'un carton à plier">
+                </figure>
+
+            </div>
+
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="05.jpg" alt="dessin de cabas en papier">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Cabas 10000</h3>
+                            <p>fabrication de cabas</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="05.jpg" alt="dessin de cabas en papier">
+                </figure>
+
+            </div>
+
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="06.jpg" alt="dessin de construction">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Archi 10000</h3>
+                            <p>Plans de maisons</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="06.jpg" alt="dessin de construction">
+                </figure>
+
+            </div>
+
+            <div class="projetPortfolio">
+                    
+                    <figure>
+
+                        <img src="07.jpg" alt="dessin d'une pointe de flèche'">
+                        
+                        <figcaption>
+                            
+                            <div class="flexTexteHover">
+                                <h3>Archi 10000</h3>
+                                <p>Plans de maisons</p>
+                            </div>
+                            
+                            <div class="logoOeil">
+                                <i class="far fa-eye"></i>
+                            </div>
+                            
+                        </figcaption>
+                        
+                    </figure>
+                    
+                    <figure class="projetSansHover">
+                        <img src="07.jpg" alt="dessin d'une pointe de flèche'">
+                    </figure>
+    
+                </div>
+            
+            <div class="projetPortfolio">
+                    
+                <figure>
+
+                    <img src="08.jpg" alt="dessin de fournitures de bureau">
+                    
+                    <figcaption>
+                        
+                        <div class="flexTexteHover">
+                            <h3>Bureau 10000</h3>
+                            <p>Fournitures de bureau</p>
+                        </div>
+                        
+                        <div class="logoOeil">
+                            <i class="far fa-eye"></i>
+                        </div>
+                        
+                    </figcaption>
+                    
+                </figure>
+                
+                <figure class="projetSansHover">
+                    <img src="08.jpg" alt="dessin de foutnitures de bureau">
+                </figure>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="sectionContact">
+
+        <div id="backgroundMap">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2206.693553794134!2d2.353154637464407!3d48.873164925345826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25+Rue+d&#39;Hauteville%2C+75010+Paris!5e0!3m2!1sfr!2sfr!4v1556520139363!5m2!1sfr!2sfr"></iframe>
+            
+            <div id="effetBleute"></div>
+
+        </div>
+
+        <div id="formulaire">
+            
+            <div id="adresseFormulaire">
+
+                <h2>Contact Info</h2>
+
+                <p><strong>WebAgency SAS</strong><br/>
+                25 rue d'Hauteville 75010 PARIS<br/>
+                tel : 01 02 03 04 05</p>
+
+            </div>
+            <!--formulaire de contact-->
+            <form>
+
+                <input class="sendMessage"  id="name" type="text" placeholder="Name"><br/>
+
+                <input class="sendMessage" type="email" id="email" placeholder="Email"><br/>
+
+                <input class="sendMessage" type="text" id="subject" placeholder="Subject"><br/>
+
+                <textarea id="message" rows="5" placeholder="Message"></textarea><br/>
+
+                <input class="sendButton" type="submit" value="Send Message" id="sendMessage">
+
+            </form>
+            <!--fin du formulaire-->
+        </div>
+
+    </section>
+
+    <footer>
+        
+    </footer>
+
+</div>
+
+</body>
+
+</html>

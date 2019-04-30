@@ -1,0 +1,662 @@
+/*----------------------*/
+/*==     SUMMARY        */
+/*----------------------*/
+
+/*Color codes               l 15*/
+/*Polices                   l 29*/
+/*Elements Principaux       l 38*/
+/*Header                    l 64*/
+/*Section entête            l 120*/
+/*Section services          l 157*/
+/*Section Projets           l 236*/
+/*Section Contact           l 352*/
+/*Media Queries             l 397*/
+
+/*----------------------*/
+/*==     COLOR CODES    */
+/*----------------------*/
+
+/* bleu                     #4DADCF*/
+/*bleu foncé                #3494B7*/
+/*blanc                     #FFFFFF*/
+/*noir                      #000000*/
+/*gris clair                #F5F5F5*/
+/*grix                      #DBDBDB*/
+/*gris foncé                #444447*/
+/*gris séparation           #EAEAEA*/
+/*gris background           #E4E4E4*/
+
+/*----------------------*/
+/*==DEFINITIONS DES POLICES*/
+/*----------------------*/
+
+@font-face {
+    font-family: "roboto";
+    src: url(Roboto-Regular.ttf);
+}
+
+/*----------------------*/
+/*==ELEMENTS PRINCIPAUX */
+/*----------------------*/
+
+body {
+    width: 100%;
+    margin: auto;
+    background-color: #f5f5f5;
+    font-family: roboto;
+    font-size: 0.8em;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+#containerPage {
+    width: 96%;
+    margin: auto;
+}
+
+/*----------------------*/
+/*==   HEADER           */
+/*----------------------*/
+
+/*création d'un container fixe en haut de la page*/
+#containerFixedHeader {
+    width:96%;
+    max-width: 1600px;
+    height:150px;
+    position: fixed;
+    z-index: 2;
+    top: 0px;
+}
+
+/*création d'un contenu au container fixe*/
+#logoMenu {
+    width: 100%;
+    height:150px;
+    background-color: #ffffff;
+    position: relative;
+}
+
+/*mise en page et style du logo de l'entreprise et du menu de navigation*/
+#logoEntreprise {
+     margin:  auto ;
+     width: 60%;
+     height: 50%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+#logoMenu nav {
+    display: flex;
+    margin: 0 10%;
+    justify-content: space-between;
+    height:50%;
+}
+
+#logoMenu a {
+    text-align: center;
+    text-decoration: none;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/*mise en page et style du hover sur le menu de navigation*/
+#logoMenu nav a:hover {
+    color: #4DADCF;
+    font-size: 1.3em;
+    border-top: #4DADCF 2px solid;
+    padding-top: 2%;
+}
+
+/*----------------------*/
+/*==     SECTION ENTETE       */
+/*----------------------*/
+
+/*mise en page de la section entête par rapport au menu fixe*/
+#sectionEntete {
+    padding-top: 150px;
+}
+
+/*mise en page et style du texte et des chevrons du slider*/
+#contenuSlider {
+    text-align: center;
+    margin-bottom: 1.5%;
+}
+
+#sectionEntete button {
+    color: #ffffff;
+    background-color: #4DADCF;
+    border: 0px #4DADCF solid;
+    border-bottom:3px solid #3494b7;
+    border-radius: 3%;
+    padding: 1.5% 3%;
+}
+
+#texteSlider h1 span {
+    color: #4DADCF;
+}
+
+#texteSlider {
+    max-height: 536px;
+}
+
+/* retrait de l'image et des chevrons en version mobile-first*/
+#imageSlider, #slider i {
+    display:none;
+}
+
+/*----------------------*/
+/*==     SECTION SERVICES      */
+/*----------------------*/
+
+/*mise en page de la section service par rapport au menu fixe*/
+#sectionServices {
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+/*mise en page et style du trait avec le rond servant de séparation*/
+.separation {
+    display: flex;
+    justify-content: center;
+}
+
+.separation hr{
+    width: 45px;
+    color: #EAEAEA;
+    margin: auto 0;
+}
+
+.separation i {
+    color: #4DADCF;
+    background-color: #ffffff;
+    font-size: 14px;
+    border-radius: 50%;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/*mise en place du paragraphe dans l'entête de la section services*/
+#headerServices p {
+    text-align: center;
+    margin: auto 5%;
+}
+
+/*mise en page et style des articles*/
+.blocArticle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 3%;
+}
+
+/*mise en page et style des logos devant les textes des services*/
+.logoArticle {
+    border: 1px #EAEAEA solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:60px;
+    height:60px;
+    color: #4DADCF;
+    position: relative;
+}
+
+.texteArticle {
+    width:75%;
+}
+
+.logoStyle {
+    font-size: 28px;
+}
+
+.logoStyleCircle {
+    font-size: 16px;
+    position: absolute;
+    right: -8px;
+    top: 22px;
+}
+
+/*----------------------*/
+/*     SECTION PROJETS*/
+/*----------------------*/
+
+/*mise en page de la section projets par rapport au menu fixe*/
+#sectionProjets {
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
+/*mise en place du paragraphe dans l'entête de la section projets*/
+#pHeaderProjets {
+    text-align: center;
+}
+
+/*mise en page et style du menu de navigation de la section projets*/
+#menuProjets {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 4.5%;
+}
+
+#menuProjets a {
+    text-decoration: none;
+    background-color: #e4e4e4;
+    color: #000000;
+    text-align: center;
+    position: relative;
+    padding: 8px;
+}
+
+#AllWorks {
+    border-radius:5px 0 0 5px;
+}
+
+#Portfolio {
+    border-radius: 0 5px 5px 0;
+}
+
+/*style du hover du menu de navigation de la section projet*/
+#menuProjets a:hover {
+    background-color: #4DADCF;
+    color: #ffffff;
+    border-bottom: #3494b7 solid 4px;
+}
+
+/*création des triangles sous le menu de navigation*/
+#menuProjets a:hover::after{
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-top: 13.8px solid #3494b7;
+    position: absolute;
+    bottom: -21.8px;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+}
+
+/*mise en page et style des figcaption en position absolute et en hover sur les images de projets*/
+figure {
+    margin: 0;
+}
+
+.projetPortfolio {
+    position: relative; 
+    margin:2%;
+}
+
+.projetSansHover {
+    position: absolute;
+    top: 0;
+    left:0;
+    width: 100%;
+}
+
+.projetSansHover:hover {
+    opacity:0;
+} 
+
+figcaption {
+    display: flex;
+    justify-content: space-around;
+    background-color:RGB(114, 88, 50, 0.5);
+    position:absolute;
+    bottom : 2%;
+    left: 0;
+    width: 100%;
+}
+
+.flexTexteHover {
+    display: flex;
+    flex-direction: column;
+}
+
+figcaption h3, figcaption p {
+    color: #ffffff;
+}
+
+/*creation du logo oeil*/
+.logoOeil {
+    border-radius: 50%;
+    background-color: #4DADCF;
+    color: #ffffff;
+    border: solid #ffffff 2px;
+    height: 50px;
+    width: 50px;
+    margin-top: -25px;
+    margin-right: 4%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+/*----------------------*/
+/*== SECTION CONTACT         */
+/*----------------------*/
+#sectionContact {
+    width: 75%;
+    margin: auto;
+}
+
+#sectionContact h2, #sectionContact p{
+    text-align: center;
+}
+
+.sendMessage {
+    margin-bottom: 10px;
+    width:99%;
+    height: 30px;
+    border: solid 1px #444447;
+    border-radius: 4px;
+    padding:4px;
+}
+
+textarea {
+    margin:10px 0;
+    width:99%;
+    padding:2px 0;
+    border: solid 1px #444447;
+    border-radius: 4px;
+    padding:4px;
+}
+
+.sendButton {
+    background-color: #4DADCF;
+    color: #ffffff;
+    padding: 2%;
+    border-radius: 5px;
+    border-bottom: 2px #3494b7 solid;
+    margin: auto;
+    width:50%;
+    margin: 0 25% 3% 25%;
+}
+
+#backgroundMap {
+    display :none;
+}
+
+/*----------------------*/
+/*==  MEDIA QUERIES     */
+/*----------------------*/
+
+/*mise en page et style pour tous ecrans de + de 640px*/ 
+@media screen  and (min-width: 640px) {
+
+    /*----------------------*/
+    /*==ELEMENTS PRINCIPAUX */
+    /*----------------------*/
+
+    /* mise en page et style du body*/
+    body {
+        max-width: 1600px;
+        background-color: #ffffff;
+        margin-top: 100px;
+        font-size: 1em;
+    }
+
+    #containerPage {
+        width: 100%;
+    }
+
+    /*----------------------*/
+    /*==   HEADER           */
+    /*----------------------*/
+    
+    /*mise en page du container fixe*/
+    #containerFixedHeader {
+        height: 100px;
+        width: 100%;
+    }
+
+    /* mise en page du contenu du menu fixe*/
+    #logoMenu {
+        display: flex;
+        width:100%;
+        height:100px;
+    }
+
+    #logoEntreprise {
+        height: 100px;
+        width: 30%;
+        margin: auto 5%;
+    }
+
+    #logoMenu nav{
+        width:60%;
+        height:100px;
+        }
+
+    /*----------------------*/
+    /*==     SECTION ENTETE       */
+    /*----------------------*/
+    
+    /*mise en page de la section entête par rappord au menu fixe*/
+    #sectionEntete {
+        padding-top: 100px;
+        margin-top: -100px;
+    }
+
+    /*mise en page et style du slider en relative avec texte en absolute*/
+    
+    #slider {
+        width: 100%;
+        height: auto;
+        position: relative;  
+    }
+
+    #imageSlider {
+        display: block;
+    }
+
+    #contenuSlider i {
+        display: block;
+        color: #ffffff;
+    }
+
+    #texteSlider {
+        width: 40%;
+        margin-left: 2%;
+        margin-right: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #texteSlider p{
+        text-align: left;
+        color:#ffffff;
+    }
+
+    #texteSlider h1 {
+        color: #ffffff;
+        text-align: left;
+        margin-bottom: 0;
+    }
+
+    #contenuSlider button {
+        width:200px;
+    }
+
+    #contenuSlider {
+        display: flex;
+        position: absolute;
+        left:0px;
+        bottom: 0px;
+        justify-content: space-between;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    /*création des demi cercles autour des chevrons*/
+    #leftChevron {
+        height: 50px;
+        width: 25px;
+        border-radius: 0 25px 25px 0;
+        background-color: #444447;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    #rightChevron {
+        height: 50px;
+        width: 25px;
+        border-radius:25px 0 0 25px ;
+        background-color: #444447;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    /*----------------------*/
+    /*==     SECTION SERVICES      */
+    /*----------------------*/
+    
+    /*mise en page de la section services par rapport au menu fixe*/
+    #sectionServices {
+        margin-top: -100px;
+        padding-top: 100px;
+        }
+
+    /* mise en page des articles et de la photo d'ordi*/
+    .blocArticle {
+        flex-direction: row;
+    }
+
+    #contenuServices {
+        display: flex;
+        width:100%;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    #photoOrdi {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #headerServices p {
+        margin: 1em 5%;
+    }
+
+    /*----------------------*/
+    /*     SECTION PROJETS*/
+    /*----------------------*/
+
+    #menuProjets {
+        margin: 4% auto;
+    }
+    }
+
+/*mise en page portfolio et font-size slider version tablette*/
+@media screen and (min-width: 640px) and (max-width: 1025px) {
+    #miseenpagePortfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .projetPortfolio {
+        width:46%;
+    }
+
+    #slider {
+        font-size: 100%;
+    }
+}
+
+/*mise en page font-size slider, portfolio et section contact version ordi*/
+@media screen and (min-width: 1025px) {
+    /*portfolio*/
+    #miseenpagePortfolio {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .projetPortfolio {
+        width: 21%;
+    }
+
+    #slider {
+        font-size: 160%;
+    }
+
+    /*----------------------*/
+    /*== SECTION CONTACT         */
+    /*----------------------*/
+
+    #backgroundMap {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 600px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: 0px;
+    }
+
+    #effetBleute {
+        background-color: #4DADCF;
+        opacity: 0.2;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height:100%;
+    }
+
+    #sectionContact {
+        position: relative;
+        width:100%;
+    }
+
+    #formulaire {
+        position: absolute;
+        top: 15%;
+        right: 15%;
+        border: 0px solid #ffffff;
+        background-color: rgb(255, 255, 255, 0.7);
+        padding:2%;
+        width: 30%;
+    }
+
+    #formulaire p, #formulaire h2 {
+        text-align: left;
+    }
+
+    #formulaire h2 {
+        margin-top: 0;
+    }
+
+    .sendButton {
+        width:45%;
+        margin:  0;
+    }
+}
+
+
+    
